@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Calculation from '../Calculation/Calculation';
 import Workout from '../Workout/Workout';
 import './Club.css'
 
 const Club = () => {
     const [workouts, setWorkouts] = useState([])
+    const [times ,setTimes]= useState([])
 
     useEffect(() =>{
         fetch('club.json')
@@ -12,7 +14,8 @@ const Club = () => {
     },[])
 
     const handleAddToList= (workout) =>{
-        console.log(workout)
+        const newTimes = [...times, workout];
+        setTimes(newTimes);
     }
 
 
@@ -33,7 +36,8 @@ const Club = () => {
             </div>
             </div>
             <div className='calculation-container'>
-                <h1>jahid</h1>
+                <Calculation times={times}>
+                </Calculation>
 
             </div>
         </div>
