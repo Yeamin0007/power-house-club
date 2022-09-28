@@ -6,13 +6,15 @@ const Club = () => {
 
     useEffect(() =>{
         fetch('club.json')
+        .then(res=> res.json())
+        .then(data => setWorkouts(data))
     },[])
 
 
     return (
         <div className='club-container'>
             <div className='workout-container'>
-                <h1>hossain</h1>
+                <h1>hossain: {workouts.length}</h1>
 
             </div>
             <div className='calculation-container'>
