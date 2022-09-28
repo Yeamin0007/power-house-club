@@ -2,56 +2,56 @@
     {
         "id": "1",
         "name": "Squats",
-        "age": "20",
-        "Time required": 3725,
+        "age": "18-25",
+        "Time required": 45,
         "img": "https://www.healthdigest.com/img/gallery/when-you-do-squats-every-day-this-is-what-happens/intro-1611780548.jpg",
         "info": "The squat is a complete lower body builder. Simply by getting good at squats, you will notice that your quads, hamstrings, glutes, and calves all grow."
     },
     {
         "id": "2",
         "name": "Push-up",
-        "age": "20",
-        "Time required": 3725,
+        "age": "18-25",
+        "Time required": 30,
         "img": "https://assets.gqindia.com/photos/5cee7eb00379a73d25177759/4:3/w_1440,h_1080,c_limit/Pushup.jpg",
         "info": "Doing pushups every day can be effective if you're looking for a consistent exercise routine to follow. You will likely notice gains in upper body strength if you do pushups regularly."
     },
     {
         "id": "3",
         "name": "Bench Press",
-        "age": "20",
-        "Time required": 3725,
+        "age": "20-35",
+        "Time required": 30,
         "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bench-press-spot-1571829590.jpg",
         "info": "The bench press works the muscles of the chest, shoulders (primarily front delt) and triceps. By perfecting the movement and becoming stronger at it, you will build all of these muscle groups."
     },
     {
         "id": "4",
         "name": "Deadlift",
-        "age": "20",
-        "Time required": 3725,
+        "age": "20-35",
+        "Time required": 20,
         "img": "https://cdn.shopify.com/s/files/1/0053/0114/1604/articles/natural-force-blog-ultimate-guide-deadlift-part-1-featured_v1_1372x.jpg?v=1545092787",
         "info": "The most popular among beginners is the trap bar deadlift, as it puts the lifter in a more favorable upright lifting position."
     },
     {
         "id": "5",
         "name": "Jumping Jack",
-        "age": "20",
-        "Time required": 3725,
+        "age": "15-25",
+        "Time required": 60,
         "img": "https://www.bienestarfitness.com/wp-content/uploads/2016/02/jumping-jacks.jpg",
         "info": " In addition to increasing your heart rate and improving muscular strength and endurance, jumping jacks are also a fantastic way to burn calories."
     },
     {
         "id": "6",
         "name": "Overhead Press",
-        "age": "20",
-        "Time required": 3725,
+        "age": "20-30",
+        "Time required": 30,
         "img": "https://cdn.shopify.com/s/files/1/1876/4703/files/shutterstock_504909754.jpg?v=1654721225",
         "info": "Overhead presses primarily target the muscles of the shoulder but will also indirectly target the triceps and require a ton of core stability to perform efficiently."
     },
     {
         "id": "7",
         "name": "Leg raises",
-        "age": "20",
-        "Time required": 3725,
+        "age": "20-30",
+        "Time required": 40,
         "img": "https://cdn.mos.cms.futurecdn.net/8pqYVQDnmf5ZEAY6gorthj.jpg",
         "info": "Leg lifts or leg raises work the core as well as the hips and low back, making them a great move to master for improved overall strength."
     }
