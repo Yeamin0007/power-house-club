@@ -8,3 +8,11 @@
     gap: 30px;
     margin: 100px 50px;
 }
+.club-tittle{
+    color: rgb(32, 81, 81);
+    font-size: 45px;
+    margin-left: 60px;
+}
+.club-tittle-span{
+    color:rgb(88, 154, 132);
+}
