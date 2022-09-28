@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Workout from '../Workout/Workout';
 import './Club.css'
 
 const Club = () => {
@@ -14,7 +15,12 @@ const Club = () => {
     return (
         <div className='club-container'>
             <div className='workout-container'>
-                <h1>hossain: {workouts.length}</h1>
+                {
+                   workouts.map(workout=> <Workout 
+                    key={workout.id}
+                    workout={workout}
+                    ></Workout>) 
+                }
 
             </div>
             <div className='calculation-container'>
