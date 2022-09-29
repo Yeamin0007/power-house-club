@@ -11,13 +11,13 @@ const Calculation = (props) => {
         workoutTime = workoutTime + workouts.time;
     }
 
-    let [breakTimes, setBreaks] = useState(0);
+    const [breakTimes,setBreaks] = useState(localStorage.getItem('break'));
     const handleAddBreakTime = (breaktime) => {
         
         setBreaks(breaktime)
         localStorage.setItem('break', breaktime)
     }
-    breakTimes = localStorage.getItem('break');
+    // breakTimes = localStorage.getItem('break');
 
 
     const handleCompleteBtn = () => toast.success("Congratulation. You Completed Today's Goal.");
