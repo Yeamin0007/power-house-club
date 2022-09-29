@@ -20,3 +20,44 @@
     background-color: rgb(121, 204, 176);
     text-align: center;
 }
+
+
+@media screen and (max-width:883px)  {
+
+    .club-container{
+        display: grid;
+        grid-template-columns: 2fr ;
+    }
+    .workout-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 100px 50px;
+    }
+    .calculation-container{
+        width: 100%;
+    }
+    .club-tittle{
+        width: 100%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 550px) {
+
+    .club-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .club-tittle{
+        color: rgb(32, 81, 81);
+        font-size: 15px;
+        margin: 0;
+    }
+    .workout-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 100px 20px;
+    }
+}

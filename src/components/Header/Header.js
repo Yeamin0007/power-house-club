@@ -5,7 +5,7 @@ import './Header.css'
 
 const header = () => {
     return (
-       <div>
+       <div className='nav-header'>
          <nav className='header'>
             <div className='title'>
                 <FontAwesomeIcon className='dumbbell' icon={faDumbbell} size="2x"></FontAwesomeIcon>

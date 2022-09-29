@@ -1,0 +1,7 @@
+.blog-container{
+    border: 2px solid aquamarine;
+    margin: 20px;
+}
+.blog-child{
+    padding: 30px;
+}

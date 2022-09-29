@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './Calculation.css'
 import { ToastContainer, toast } from 'react-toastify';
 
-const Calculation = (props) => {
-    
+const Calculation = (props) => {   
     const { times } = props;
     
 
@@ -12,10 +11,14 @@ const Calculation = (props) => {
         workoutTime = workoutTime + workouts.time;
     }
 
-    const [breakTimes, setBreaks] = useState(0);
+    let [breakTimes, setBreaks] = useState(0);
     const handleAddBreakTime = (breaktime) => {
+        
         setBreaks(breaktime)
+        localStorage.setItem('break', breaktime)
     }
+    breakTimes = localStorage.getItem('break');
+
 
     const handleCompleteBtn = () => toast.success("Congratulation. You Completed Today's Goal.");
 
@@ -26,8 +29,7 @@ const Calculation = (props) => {
                 <h3>Yeamin Hossain</h3>
                 <p><small>Junior web developer</small></p>
                 <p><small>Age: 23</small></p>
-                
-                <p>Email: mendis66@gmail.com</p>
+                <p>Email: yh.hoaasin48gmail.com</p>
 
             </div>
             <div className='cal-extra-header'>
@@ -35,7 +37,7 @@ const Calculation = (props) => {
             </div>
             
             <div className='break-btn'>
-            <button onClick={() => handleAddBreakTime(10)}>10s</button>
+                <button onClick={() => handleAddBreakTime(10)}>10s</button>
                 <button onClick={() => handleAddBreakTime(20)}>20s</button>
                 <button onClick={() => handleAddBreakTime(30)}>30s</button>
                 <button onClick={() => handleAddBreakTime(40)}>40s</button>
@@ -50,7 +52,7 @@ const Calculation = (props) => {
                 <p>Exercise time: {workoutTime}</p>
                 </div>
                 <div className='break-time'>
-                <p >Break Time: {breakTimes}</p>
+                <p>Break Time: {breakTimes}</p>
                 </div>
 
                 <div className='comp-btn-div'>
