@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculation.css'
 
 const Calculation = (props) => {
@@ -11,18 +11,46 @@ const Calculation = (props) => {
         workoutTime = workoutTime + workouts.time;
     }
 
+    const [breakTimes, setBreaks] = useState(0);
+    const handleAddBreakTime = (breaktime) => {
+        setBreaks(breaktime)
+    }
+
     return (
         <div className='calculation'>
             <div className='calc-head-div'>
-                <h1 className='calc-tittle'>Meet Your Couch</h1>
-                <h3>Nuno Mendis</h3>
-                <p><small>Mendis is a Certified Strength and Condition Specialist (CSCS) with the National Strength and Conditioning Association. He has an extensive background from training professional and amateur athletes to working professionals with nominal experience in fitness.</small></p>
+                <h1 className='calc-tittle'>Meet The Founder</h1>
+                <h3>Yeamin Hossain</h3>
+                <p><small>Junior web developer</small></p>
+                <p><small>Age: 23</small></p>
+                
                 <p>Email: mendis66@gmail.com</p>
 
             </div>
+            <div className='cal-extra-header'>
+            <h2>Add a break</h2>
+            </div>
+            
+            <div className='break-btn'>
+            <button onClick={() => handleAddBreakTime(10)}>10s</button>
+                <button onClick={() => handleAddBreakTime(20)}>20s</button>
+                <button onClick={() => handleAddBreakTime(30)}>30s</button>
+                <button onClick={() => handleAddBreakTime(40)}>40s</button>
+                <button onClick={() => handleAddBreakTime(50)}>50s</button>
+                </div>
 
+                <div className='cal-extra-header'>
+                <h2>Exercise Details</h2>
+                </div>
 
-            <h4>Exercise time: {workoutTime}</h4>
+                <div className='exercise-time'>
+                <p>Exercise time: {workoutTime}</p>
+                </div>
+                <div className='break-time'>
+                <p >Break Time: {breakTimes}</p>
+                </div>
+            
+            
         </div>
     );
 };
