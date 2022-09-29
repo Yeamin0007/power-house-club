@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Calculation.css'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Calculation = (props) => {
     
@@ -15,6 +16,8 @@ const Calculation = (props) => {
     const handleAddBreakTime = (breaktime) => {
         setBreaks(breaktime)
     }
+
+    const handleCompleteBtn = () => toast.success("Congratulation. You Completed Today's Goal.");
 
     return (
         <div className='calculation'>
@@ -48,6 +51,11 @@ const Calculation = (props) => {
                 </div>
                 <div className='break-time'>
                 <p >Break Time: {breakTimes}</p>
+                </div>
+
+                <div className='comp-btn-div'>
+                    <button onClick={handleCompleteBtn} className='complete-btn'>Activity Completed</button>
+                    <ToastContainer />
                 </div>
             
             
